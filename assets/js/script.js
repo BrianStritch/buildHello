@@ -45,6 +45,7 @@ function showQuestion(question){
 }
 
 function resetState(){
+    clearStatusClass(document.body);
     nextButton.classList.add('hide');
     while(answerButtonsElement.firstChild){
         answerButtonsElement.removeChild(answerButtonsElement.firstChild)
@@ -96,9 +97,9 @@ let questions = [
     {
         question: 'what is 1 + 1?',
         answers: [
-            { text: '4', correct:true},
+            { text: '4', correct:false},
             { text: '44', correct:false}, 
-            { text: '2', correct:false},
+            { text: '2', correct:true},
             { text: '3', correct:false},           
 
         ]
@@ -106,8 +107,8 @@ let questions = [
     {
         question: 'what is 5 + 5?',
         answers: [
-            { text: '4', correct:true},
-            { text: '10', correct:false}, 
+            { text: '4', correct:false},
+            { text: '10', correct:true}, 
             { text: '16', correct:false},
             { text: '3', correct:false},           
 
@@ -126,19 +127,19 @@ let questions = [
     {
         question: 'what is 2 + 1?',
         answers: [
-            { text: '4', correct:true},
+            { text: '4', correct:false},
             { text: '44', correct:false}, 
             { text: '16', correct:false},
-            { text: '3', correct:false},           
+            { text: '3', correct:true},           
 
         ]
     },
     {
         question: 'what is 12 + 4?',
         answers: [
-            { text: '4', correct:true},
+            { text: '4', correct:false},
             { text: '44', correct:false}, 
-            { text: '16', correct:false},
+            { text: '16', correct:true},
             { text: '3', correct:false},           
 
         ]
@@ -146,8 +147,8 @@ let questions = [
     {
         question: 'what is 22 + 22?',
         answers: [
-            { text: '4', correct:true},
-            { text: '44', correct:false}, 
+            { text: '4', correct:false},
+            { text: '44', correct:true}, 
             { text: '16', correct:false},
             { text: '3', correct:false},           
 
