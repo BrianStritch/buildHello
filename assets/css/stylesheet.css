@@ -53,3 +53,17 @@ body.incorrect{
 .btn.incorrect{
     background-color: red;
 }
+.start-btn, .next-btn{
+    font-size: 1.5rem;
+    font-weight: 800;
+    padding: 10px 20px;
+}
+
+.controls{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.hide{
+    display: none;
+}
