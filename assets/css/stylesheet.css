@@ -1,0 +1,55 @@
+@import url('https://fonts.googleapis.com/css2?family=Gluten:wght@100;300;600&family=Roboto:wght@300&display=swap');
+*, *::before, *::after{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Gluten', sans-serif;
+}
+body{
+    background-color: rgb(50, 50, 160);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    height: 100vh;
+}
+
+body.correct{
+    background-color: green;
+}
+body.incorrect{
+    background-color: red;
+}
+.container{
+    width: 800px;
+    max-width: 80%;
+    background-color: white;
+    border-radius: 5px;
+    box-shadow: 0 0 10px 2px;
+    padding: 10px;
+}
+.btn-grid{
+    display: grid;
+    grid-template-columns: repeat(2, auto);
+    gap: 10px;
+    margin: 20px 0;    
+}
+.btn{
+    background-color: rgb(61, 151, 187);
+    font-weight: 400;
+    border: 1px solid blue;
+    border-radius: 5px;
+    padding: 5px 10px;
+    color: white;
+    outline: none;
+}
+.btn:hover{
+    border-color: black;    
+}
+.btn.correct{
+    background-color: green;
+    color: black;
+}
+.btn.incorrect{
+    background-color: red;
+}
